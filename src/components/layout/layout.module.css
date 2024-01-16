@@ -1,0 +1,6 @@
+.outlet {
+  /* margin-top: var(--navHeight); */
+  min-height: 70vh;
+  overflow: hidden;
+  margin-top: 75px;
+}

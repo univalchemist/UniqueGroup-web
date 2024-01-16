@@ -1,0 +1,152 @@
+.outer {
+  background: #f7fbff;
+  overflow: hidden;
+}
+.uq {
+  // display: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.logo.top {
+  display: none;
+}
+.content {
+  padding: 2rem 0 0 0;
+  padding-bottom: 0;
+  // display: grid;
+  // grid-template-columns: 1fr;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  // padding-right: 1rem;
+  // padding-bottom: 1rem;
+  & img {
+    height: 50px;
+    display: none;
+  }
+}
+.copyright {
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  position: relative;
+  // overflow: hidden;
+  &::after {
+    content: "";
+    width: 150vw;
+    top: 0;
+    position: absolute;
+    // left: calc((100vw - var(--maxContentWidth)) / 2);
+    left: -50vw;
+    right: 0;
+    height: 1px;
+    background-color: #929292;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  // width: 40px;
+  // height: 40px;
+  // & img {
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: contain;
+  // }
+  & img {
+    width: 40px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  // justify-content: space-evenly;
+}
+
+.info {
+  display: flex;
+  // flex-direction: column;
+  padding: 0 1.5rem;
+  padding-right: 0;
+
+  & a {
+    cursor: pointer;
+    &:hover {
+      color: var(--blue);
+    }
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    /* or 186% */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    padding: 2rem;
+  }
+  .uq {
+    display: block;
+    margin-bottom: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+
+    color: #252d3e;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    & .item {
+      &:nth-child(2) {
+        order: 4;
+      }
+    }
+  }
+
+  .logo.top {
+    display: block;
+    // text-align: center;
+    & img {
+      display: none;
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+  }
+  .copyright {
+    align-items: center;
+    justify-content: center;
+    & .logo {
+      display: none;
+    }
+  }
+}

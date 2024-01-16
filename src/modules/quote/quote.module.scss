@@ -1,0 +1,28 @@
+.head {
+  margin: 0;
+  // margin-top: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.form {
+  background: rgba(0, 204, 131, 0.03);
+  & form {
+    // padding-top: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    //     margin-top: 2rem;
+  }
+}
+.formFooter {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+  & p {
+    position: absolute;
+    bottom: 0;
+    color: red;
+  }
+}

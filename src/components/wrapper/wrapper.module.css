@@ -1,0 +1,35 @@
+
+.wrapper {
+  flex: 1;
+
+  padding: 0 5vw;
+  /* background-color: var(--blue); */
+  
+
+}
+
+.wrapper.withNav {
+ padding-top: var(--navbarHeight);
+}
+
+.wrapper.full {
+  padding: auto;
+}
+
+.wrapper.isHidden {
+  display: none !important;
+}
+
+.container {
+  
+  max-width: var(--maxContentWidth);
+ 
+  
+  width: 100%;
+  
+  margin: 0 auto;
+}
+
+.container.full {
+  max-width: auto;
+}

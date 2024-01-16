@@ -1,0 +1,122 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: ProximaNova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background-color: red; */
+  scroll-padding-top: 65px;
+  /* scroll-behavior: smooth; */
+}
+
+:root {
+  --navHeight: 72px;
+  --maxContentWidth: 1252px;
+  --blue: #204ecf;
+  --green: #00cc83;
+  --xs: 320px;
+  --s: 481px;
+  --l: 1025px;
+  --xl: 1021px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url("/fonts/ProximaNova-Regular.otf") format("opentype");
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url("/fonts/Proxima Nova Alt Bold.otf") format("opentype");
+  /* font-display: swap; */
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.h1 u,
+.h2 u {
+  text-decoration: none;
+  /* padding-bottom: 0.1em; */
+  /* border-bottom: 2px solid; */
+}
+
+.h1 {
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 55px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 55px;
+  /* identical to box height, or 172% */
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 55px;
+  /* or 275% */
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+/* switches to mobile at 860px */
+
+@media only screen and (max-width: 1024px) {
+  .h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .h2 {
+    font-size: 28px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .h2 {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,70 @@
+.button {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  padding: 0;
+  /* max-width: 250px; */
+  /* max-height: 200px; */
+  white-space: nowrap;
+  color: #fff;
+
+  /* width: 100%; */
+
+  cursor: pointer;
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.button svg {
+  margin: 0 0.5em;
+  margin-right: 0;
+}
+
+.button.green {
+  font-family: ProximaNovaBold;
+  background-color: var(--green);
+
+  padding: 0.5em 2em;
+}
+
+.button.submit {
+  font-family: ProximaNovaBold;
+  background: #00cc83;
+  box-shadow: -6px 0px 18px rgba(0, 0, 0, 0.1), 6px 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 0.5em 2em;
+}
+
+.button.outline {
+  font-family: ProximaNovaBold;
+  border: 2px solid #00cc83;
+  background-color: #fff;
+  color: var(--green);
+  box-shadow: -6px 0px 18px rgba(0, 0, 0, 0.1), 6px 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 0.5em 2em;
+}
+
+.button.submit svg {
+  width: 1em;
+  height: 1em;
+}
+@media only screen and (max-width: 480px) {
+  .button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+  }
+}
